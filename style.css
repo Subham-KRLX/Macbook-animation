@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+.macbook {
+  width: 400px;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInZoom 2s ease-out forwards;
+  box-shadow: 0 10px 40px rgba(218, 165, 32, 0.5);
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fff4e3 0%, #ffe082 50%, #ffd700 100%);
+  padding: 20px;
+}
+
+.macbook-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(218, 165, 32, 0.25);
+}
+
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
